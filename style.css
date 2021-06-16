@@ -9,6 +9,24 @@ body{
     background-color: #ebf2ff;
 }
 
+.button__primary {
+    background-image: linear-gradient(to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+    );
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0 20px;
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -24,7 +42,7 @@ body{
     width: 100%;
 }
 
-.nav__item{
+.nav__item {
     background-image: linear-gradient(to right,
     #ff512f 0%,
     #dd2476 51%,
@@ -41,11 +59,29 @@ body{
    border: 2px solid blue;
 }
 
+.hero__image__container {
+    width: 100%;
+}
+
+.hero__image {
+    width: 100%;
+}
+
+.hero text {
+    font-size: 30px;
+    margin: 20px 0;
+}
+
 
 @media (min-width: 768px) {
     .navbar {
         justify-content: space-between;
         padding: 5px 30px;
+    }
+    .hero__container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
     }
 }
 
@@ -53,7 +89,7 @@ body{
     .navbar__brand {
         width: 300px;
     }
-    .nav__item{
+    .button__primary {
         padding: 20px;
         font-size: 30px;
     }
